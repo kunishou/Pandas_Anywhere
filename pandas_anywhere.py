@@ -24,7 +24,7 @@ class SearchWindow(tk.Frame):
         self.master.geometry("500x240")
         #self.master.resizable(width=0, height=0) #windowサイズを固定
         
-        self.master.title("Pandas Anywhere Ver1.0.0")
+        self.master.title("Pandas Anywhere Ver1.0.1")
         self.pack()
         self.filePath = tk.StringVar()
         self.create_widgets()
@@ -126,7 +126,7 @@ class SearchWindow(tk.Frame):
             if self.file[-3:] == 'csv':
                 df = pd.read_csv(file, encoding=self.enc,skiprows=self.skiprows)
             else:
-                df = pd.read_table(file, encoding=self.enc,skiprows=self.skiprows)
+                df = pd.read_table(file, encoding=self.enc, sep=',', skiprows=self.skiprows)
             
             self.data = df
             
