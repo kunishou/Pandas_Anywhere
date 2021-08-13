@@ -1,3 +1,8 @@
+* ツールには、PandasGUIとpandas-profilingの機能が搭載
+* exeファイルからツールを起動
+* GUI上から分析したいデータファイル（csv、txtファイル）を読み込み、GUI上の「PandasGUI」、「pandas-profiling」ボタンをクリックすることで各機能が呼び出される
+
+
 ![pandas_anywhere](https://user-images.githubusercontent.com/69422183/129393451-065d0cd7-b677-42f6-b177-96b68622aa30.png)
 
 
